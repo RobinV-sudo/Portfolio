@@ -1,17 +1,14 @@
 <body class="background">
   <div class="navbar">
-    <%= image_tag ('/assets/logo_rv.png'),
-      class: "logo_style"
-    %>
+    <%= link_to root_path do %>
+      <%= image_tag ('/assets/logo_rv.png'), alt: ("logo rv"), class: ("logo_style") %>
+    <% end %>
     <a class="navbar-item" href="/contact">Contact</a>
     <a class="navbar-item" href="/about">About</a>
     <a class="navbar-item" href="/project">Project</a>
     <a class="navbar-item" href="/">Home</a>
   </div>
-      <div>
-        <h1>The Start</h1>
-          <p>What do you think what happen?</p>
-          <p>Your worst nightmare ofcourse!</p>
-          <p>BOOOOOOOOOOOOO!!!</p>
+      <div class: "main_card" >
+        <div class: "card-info" >Here new infomation</div>
       </div>
 </body>

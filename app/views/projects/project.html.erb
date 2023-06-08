@@ -1,9 +1,8 @@
 <body class="background">
   <div class="navbar">
-    <%= image_tag ('/assets/logo_rv.png'),
-      class: "logo_style",
-      root_path "
-    %>
+    <%= link_to root_path do %>
+      <%= image_tag ('/assets/logo_rv.png'), alt: ("logo rv"), class: ("logo_style") %>
+    <% end %>
     <a class="navbar-item" href="/contact">Contact</a>
     <a class="navbar-item" href="/about">About</a>
     <a class="navbar-item" href="/project">Project</a>
