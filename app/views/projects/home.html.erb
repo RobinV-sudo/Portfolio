@@ -1,17 +1,26 @@
 <body class="background">
-  <div class="navbar">
-    <%= link_to root_path do %>
-      <%= image_tag ('/assets/logo_rv.png'), alt: ("logo rv"), class: ("logo_style") %>
-    <% end %>
-    <a class="navbar-item" href="/contact">Contact</a>
-    <a class="navbar-item" href="/about">About</a>
-    <a class="navbar-item" href="/project">Project</a>
-    <a class="navbar-item" href="/">Home</a>
-  </div>
-    <div class="main_card">
-      <h2> Here new information </h2>
+    <div class="navbar">
+      <%= link_to root_path do %>
+        <%= image_tag ('/assets/logo_rv.png'), alt: ("logo rv"), class: ("logo_style") %>
+      <% end %>
+      <a class="navbar-item" href="/contact">Contact</a>
+      <a class="navbar-item" href="/about">About</a>
+      <a class="navbar-item" href="/project">Project</a>
+      <a class="navbar-item" href="/">Home</a>
     </div>
-      <div class="photo_card_home_2">
-        <%= image_tag ('/assets/rv_me.jpg'), alt: ("Photo Robin Vorstedt"), class: ("card_photo_home") %>
+    <div class="container">
+      <div class="col-9">
+        <div class="main_card">
+          <h2 class="main_card"> Creative Web Developer </h2>
+            <p>I care a lot about design for positive impact and enjoy creative user-centric, delightful, and human experiences.</p>
+              <form action="/contact"></form>
+                <button type="submit">Contact Me</button>
+        </div>
       </div>
+        <div class="col-3">
+          <div class="photo_card_home_2">
+            <%= image_tag ('/assets/rv_me.jpg'), alt: ("Photo Robin Vorstedt"), class: ("card_photo_home") %>
+          </div>
+        </div>
+    </div>
 </body>
