@@ -39,8 +39,8 @@
   padding: 30px;
 }
 
-.main_card button {
-  height: 70px;
+.main_card a {
+  height: 40px;
   width: 200px;
   background-color: white;
   color: black;
@@ -49,4 +49,6 @@
   margin-right: 665px;
   margin-top: 615px;
   font-size: 30px;
+  text-align: center;
+  text-decoration-line: none;
 }
