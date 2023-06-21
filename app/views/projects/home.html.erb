@@ -1,4 +1,5 @@
 <body class="background">
+  <div class="container">
     <div class="navbar">
       <%= link_to root_path do %>
         <%= image_tag ('/assets/logo_rv.png'), alt: ("logo rv"), class: ("logo_style") %>
@@ -8,26 +9,26 @@
       <a class="navbar-item" href="/project">Project</a>
       <a class="navbar-item" href="/">Home</a>
     </div>
-    <div class="container">
-      <div class="col-9">
-        <div class="main_card">
-          <h2 class="main_card"> Creative Web Developer </h2>
-            <p>I care a lot about design for positive impact and enjoy creative user-centric, delightful, and human experiences.</p>
-              <a href="/contact">Contact Me</a>
-                 <%= image_tag ('/assets/linkdeln_logo.png'), alt: ('linkdeln'), class: ('logo_linkdeln') %>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="main_card">
+            <h2 class="main_card"> Creative Web Developer </h2>
+              <p>I care a lot about design for positive impact and enjoy creative user-centric, delightful, and human experiences.</p>
+                <a href="/contact">Contact Me</a>
+                   <%= image_tag ('/assets/linkdeln_logo.png'), alt: ('linkdeln'), class: ('logo_linkdeln') %>
+          </div>
         </div>
+          <div class="col-md-3">
+            <div class="photo_card_home_2">
+              <%= image_tag ('/assets/rv_me.jpg'), alt: ("Photo Robin Vorstedt"), class: ("card_photo_home") %>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="experince">
+          </div>
+         <div class="col-md-6">
+            <div class="course"></div>
+          </div>
       </div>
-        <div class="col-3">
-          <div class="photo_card_home_2">
-            <%= image_tag ('/assets/rv_me.jpg'), alt: ("Photo Robin Vorstedt"), class: ("card_photo_home") %>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="experince">
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="course"></div>
-        </div>
-    </div>
 </body>
+i
