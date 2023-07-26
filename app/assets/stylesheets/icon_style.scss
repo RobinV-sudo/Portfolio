@@ -1,12 +1,8 @@
 .icon_style {
+  display: block;
   width: 30px;
   height: 30px;
-  align-items: center;
   padding: 5px;
-}
-
-.icon_style img {
-  position: left;
-  display: grid;
-  grid-template-columns: auto auto;
+  float: right;
+  margin-top: 30px;
 }
