@@ -2,7 +2,7 @@
   height: 100px;
   width: 100px;
   border-radius: 15px;
-  border: 2px solid black;
+  border: 2px dotted black;
   margin-left: 35px;
   background-color: white;
   font-family: 'Ubuntu', sans-serif;
@@ -22,4 +22,10 @@
   margin-top: 40px;
   font-weight: bold;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.icon_container:hover {
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
 }
