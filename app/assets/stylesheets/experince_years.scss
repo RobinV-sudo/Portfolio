@@ -4,8 +4,14 @@
   border-radius: 15px;
   border: 2px solid black;
   margin-left: 35px;
-  background-color: white;
   font-family: 'Ubuntu', sans-serif;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.gradient {
+  --gradient-start: #6CACFF;
+  --gradient-start-text: '#6CACFF';
+  --gradient-end: #8DEBFF;
+  --gradient-end-text: '#8DEBFF';
 }
