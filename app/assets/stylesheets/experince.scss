@@ -7,3 +7,29 @@
   display: flex;
   margin: 15px;
 }
+
+.experince_years {
+  height: 35rem;
+  width: 33rem;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin-left: 35px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: white;
+}
+
+.experince_years_text {
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 100px;
+  margin-top: 12rem;
+}
+
+.experince_years_text:hover {
+  color: #8AAAE5;
+  transition: all 0.5s;
+}
+
