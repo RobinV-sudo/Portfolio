@@ -12,7 +12,8 @@
   margin-top: 30px;
   flex-direction: column;
   font-family: 'Ubuntu', sans-serif;
-  border: 2px solid black
+  border: 2px solid black;
+ // white-space: pre-wrap;
 }
 
 .main_card h2 {
@@ -42,4 +43,9 @@
   font-size: 40px;
   padding: 30px;
   margin-left: 130px;
+  overflow-y: scroll;
+}
+
+.multiline {
+  white-space: pre-wrap;
 }
