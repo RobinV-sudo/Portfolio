@@ -10,9 +10,12 @@
   </div>
   <div class="row">
     <div class="col-md-6">
-      <div class="photo_about">
+      <div class="slidshow_container">
         <%= image_tag ('/assets/about_rv.jpg'), alt: ('Photo Robin Vorstedt about'), class: ('photo_about_rv') %>
       </div>
+      <% javascript_include_tag('slideshow') %>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <div class="col-md-6">
       <div class="about_main_card">
