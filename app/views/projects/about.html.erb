@@ -11,7 +11,15 @@
   <div class="row">
     <div class="col-md-6">
       <div class="slidshow_container">
+        <div class="fade mySlides">
         <%= image_tag ('/assets/about_rv.jpg'), alt: ('Photo Robin Vorstedt about'), class: ('photo_about_rv') %>
+        </div>
+        <div class="fade mySlides">
+          <%= image_tag ('/assets/taipai_rv.jpg'), alt: ('Photo Robin Vorstedt about'), class: ('photo_about_rv') %>
+        </div>
+        <div class="fade mySlides">
+          <%= image_tag ('/assets/beach_rv.jpg'), alt: ('Photo Robin Vorstedt about'), class: ('photo_about_rv') %>
+        </div>
       </div>
       <% javascript_include_tag('slideshow') %>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
