@@ -1,0 +1,44 @@
+.about_main_card {
+    position: relative;
+    background-color: #8AAAE5;
+    height: 700px;
+    width: 900px;
+    display: flex;
+    font-weight: bold;
+    border-radius: 15px;
+    margin: 13px;
+    margin-top: 30px;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid black;
+}
+
+.about_main_card_title {
+  color: black;
+  font-size: 50px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 25px;
+  height: 100px;
+  width: 600px;
+  border: 2px solid black;
+  margin-left: 170px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+}
+
+.about_main_card_text {
+  color: black;
+  background-color: white;
+  height: 380px;
+  width: 740px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-size: 40px;
+  padding: 30px;
+  margin-left: 50px;
+  overflow-y: scroll;
+}

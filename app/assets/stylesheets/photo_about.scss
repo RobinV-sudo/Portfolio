@@ -1,19 +1,25 @@
-.photo_card_home_2 {
+.photo_about {
   position: relative;
   background-color: #8AAAE5;
-  height: 800px;
-  width: 600px;
+  height: 700px;
+  width: 800px;
   display: flex;
   justify-content: center;
   color: white;
   font-size: 24px;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-left: 30px;
   margin-top: 30px;
   margin-right: 20px;
   flex-direction: column;
-  border: 2px solid black
+  border: 2px solid black;
+}
+
+.photo_about_rv {
+  display: flex;
+  margin: 170px;
+  width: 60%;
+  border-radius: 15px;
+  border: 2px solid black;
 }
