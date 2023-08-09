@@ -1,15 +1,21 @@
-let index = 0;
-displayImages();
-function displayImages() {
-  let i;
-  const images = document.getElementsByClassName("image");
-  for (i = 0; i < images.length; i++) {
-    images[i].style.display = "none";
+document.addEventListener("DOMContentLoaded", function() {
+  const slides = document.querySelectorAll(".slide");
+  let currentSlide = 0;
+
+  function showSlide(slideIndex) {
+    slides.forEach((slide, index) => {
+      slide.style.transform = `translateX(${(index - slideIndex) * 100}%)`;
+    });
   }
-  index++;
-  if (index > images.length) {
-    index = 1;
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
   }
-  images[index-1].style.display = "block";
-  setTimeout(displayImages, 2000);
-}
+
+  // Automatically advance the slides every 5 seconds
+  setInterval(nextSlide, 5000);
+
+  // Initial display
+  showSlide(currentSlide);
+});

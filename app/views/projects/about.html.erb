@@ -10,20 +10,18 @@
   </div>
   <div class="row">
     <div class="col-md-6">
-      <div class="slidshow_container">
-        <div class="photo_about_rv">
-          <div>
-            <img src='/assets/about_rv.jpg', alt='Photo Robin Vorstedt about', class="img_rv fade">
-          </div>
-          <div>
-            <img src='/assets/rv_taipai.jpg', alt='Photo Robin Vorstedt about taipai', class="img_rv fade">
-          </div>
-          <div>
-            <img src='/assets/rv_beach.jpg', alt='Photo Robin Vorstedt about beach', class="img_rv fade">
-          </div>
-          <script src="slideshow.js"></script>
+      <!--<div class="slidshow_container">
+        <div>
+           <img src='/assets/about_rv.jpg', alt='Photo Robin Vorstedt about', class="fade photo_about_rv"> */
         </div>
-      </div>
+        <div>
+          <img src='/assets/rv_taipai.jpg', alt='Photo Robin Vorstedt about taipai', class="fade photo_about_rv">
+        </div>
+        <div>
+          <img src='/assets/rv_beach.jpg', alt='Photo Robin Vorstedt about beach', class="fade photo_about_rv">
+        </div>
+        <script scr='slideshow.js'></script>
+      </div> -->
     </div>
     <div class="col-md-6">
       <div class="about_main_card">
@@ -33,3 +31,34 @@
     </div>
   </div>
 </body>
+
+
+<div class="slider">
+  <div class="slides">
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <div class="slide first">
+      <img src='/assets/about_rv.jpg', alt='Photo Robin Vorstedt about'>
+    </div>
+    <div class="slide first">
+      <img src='/assets/rv_taipai.jpg', alt='Photo Robin Vorstedt about taipai'>
+    </div>
+    <div class="slide first">
+      <img src='/assets/rv_beach.jpg', alt='Photo Robin Vorstedt about beach'>
+    </div>
+    <div class="navigation-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+    </div>
+  </div>
+  <div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+</div>
