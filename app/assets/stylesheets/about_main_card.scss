@@ -29,6 +29,11 @@
   display: flex;
 }
 
+.about_main_card_title:hover {
+  color: #8AAAE5;
+  transition: all 0.5s;
+}
+
 .about_main_card_text {
   color: black;
   background-color: white;
