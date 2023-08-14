@@ -1,21 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const slides = document.querySelectorAll(".slide");
-  let currentSlide = 0;
+let currentSlide = 1;
 
-  function showSlide(slideIndex) {
-    slides.forEach((slide, index) => {
-      slide.style.transform = `translateX(${(index - slideIndex) * 100}%)`;
-    });
-  }
+function showSlide(slideNumber) {
+  const slides = document.querySelectorAll('#slideshow img');
+  const buttons = document.querySelectorAll('.btn');
 
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }
+  slides[currentSlide - 1].classList.remove('active');
+  slides[slideNumber - 1].classList.add('active');
 
-  // Automatically advance the slides every 5 seconds
-  setInterval(nextSlide, 5000);
+  buttons[currentSlide - 1].classList.remove('active');
+  buttons[slideNumber - 1].classList.add('active');
 
-  // Initial display
-  showSlide(currentSlide);
-});
+  currentSlide = slideNumber;
+}
