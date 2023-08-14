@@ -1,51 +1,54 @@
  <body class="background">
-  <div class="navbar">
-    <%= link_to root_path do %>
-      <%= image_tag ('/assets/logo_rv.png'), alt: ("logo rv"), class: ("logo_style") %>
-    <% end %>
-    <a class="navbar-item" href="/contact">Contact</a>
-    <a class="navbar-item" href="/about">About</a>
-    <a class="navbar-item" href="/project">Project</a>
-    <a class="navbar-item" href="/">Home</a>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="about_main_card">
-        <h2 class="about_main_card_title">About Robin Vorstedt</h2>
-        <p class="about_main_card_text"></p>
-      </div>
+  <div class="container">
+    <div class="navbar">
+      <%= link_to root_path do %>
+        <%= image_tag ('/assets/logo_rv.png'), alt: ("logo rv"), class: ("logo_style") %>
+      <% end %>
+      <a class="navbar-item" href="/contact">Contact</a>
+      <a class="navbar-item" href="/about">About</a>
+      <a class="navbar-item" href="/project">Project</a>
+      <a class="navbar-item" href="/">Home</a>
     </div>
-    <div class="col-md-6">
-      <div class="slider">
-        <div class="sliders">
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-        <div class="slide first">
-          <img src='/assets/about_rv.jpg', alt='Photo Robin Vorstedt about'>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about_main_card">
+            <h2 class="about_main_card_title">About Robin Vorstedt</h2>
+            <p class="about_main_card_text"></p>
+          </div>
         </div>
-        <div class="slide first">
-          <img src='/assets/rv_taipai.jpg', alt='Photo Robin Vorstedt about taipai'>
+        <div class="col-md-6">
+          <div class="slider">
+            <div class="sliders">
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+            <div class="slide first">
+              <img src='/assets/about_rv.jpg', alt='Photo Robin Vorstedt about'>
+            </div>
+            <div class="slide first">
+              <img src='/assets/rv_taipai.jpg', alt='Photo Robin Vorstedt about taipai'>
+            </div>
+            <div class="slide first">
+              <img src='/assets/rv_beach.jpg', alt='Photo Robin Vorstedt about beach'>
+            </div>
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+            </div>
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+            </div>
+          </div>
         </div>
-        <div class="slide first">
-          <img src='/assets/rv_beach.jpg', alt='Photo Robin Vorstedt about beach'>
+        <div class="col-md-12">
+          <div class="diploma-card">
+            <h2 class="diploma-card-title">Diploma Le Wagon</h2>
+              <img src='/assets/diploma-LeWagon.jpg', alt='Diploma', class="diploma-photo">
+          </div>
         </div>
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-        </div>
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-12">
-      <div class="diploma-card">
-        <h2 class="diploma-card-title">Diploma Le Wagon</h2>
-          <img src='/assets/diploma-LeWagon.jpg', alt='Diploma', class="diploma-photo">
       </div>
     </div>
   </div>
