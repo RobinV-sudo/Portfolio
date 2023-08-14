@@ -12,6 +12,7 @@
   flex-flow: row wrap;
   overflow-y:scroll;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .course_title {
@@ -27,4 +28,9 @@
   font-family: 'Ubuntu', sans-serif;
   margin-left: 13rem;
   display: flex;
+}
+
+.course_title:hover {
+  color: #8AAAE5;
+  transition: all 0.5s;
 }

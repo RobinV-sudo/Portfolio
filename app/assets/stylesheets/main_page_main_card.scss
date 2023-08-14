@@ -1,7 +1,7 @@
 .main_card {
   position: relative;
   background-color: #8AAAE5;
-  height: 700px;
+  height: 785px;
   width: 1100px;
   display: flex;
   font-weight: bold;
@@ -28,14 +28,19 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+.main_card:hover h2 {
+  color: #8AAAE5;
+  transition: all 0.5s;
+}
+
 .main_card p {
   color: black;
   background-color: white;
-  height: 380px;
+  height: 425px;
   width: 800px;
   border: 2px solid black;
   border-radius: 15px;
-  margin-top: 50px;
+  margin-top: 10px;
   font-size: 40px;
   padding: 30px;
   margin-left: 130px;
