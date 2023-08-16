@@ -1,9 +1,7 @@
 <body class="background">
   <div class="container">
     <div class="navbar">
-      <%= link_to root_path do %>
-        <%= image_tag ('/assets/logo_rv.png'), alt: ("logo rv"), class: ("logo_style") %>
-      <% end %>
+          <%= cl_image_tag("axckr9oplcx3mgtoektt", alt: "logo rv", class: "logo_style") %>
         <a class="navbar-item" href="/contact">Contact</a>
         <a class="navbar-item" href="/about">About</a>
         <a class="navbar-item" href="/project">Project</a>
@@ -23,17 +21,17 @@
                 <div class="buttom_row">
                   <a class="contact_me" href="/contact">Contact Me</a>
                   <a href="https://www.linkedin.com/in/robinvorstedt/">
-                    <%= image_tag('/assets/linkdeln_logo.png', alt: 'linkdeln', class: 'logo_linkdeln') %>
+                    <%= cl_image_tag("mwdymtombgh7u5lw7jxg", alt: "linkdeln", class: "logo_linkdeln") %>
                   </a>
-                  <a href='https://github.com/RobinV-sudo/';">
-                    <%= image_tag ('/assets/icon-github.png'), alt: ('github'), class: ('logo_github') %>
+                  <a href='https://github.com/RobinV-sudo/'>
+                    <%= cl_image_tag("icon-github_ztzcuj", alt: "github", class: "logo_github") %>
                   </a>
                 </div>
           </div>
         </div>
         <div class="col-md-3">
           <div class="photo_card_home_2">
-            <%= image_tag ('/assets/rv_me.jpg'), alt: ('Photo Robin Vorstedt'), class: ('card_photo_home') %>
+            <%= cl_image_tag("ezyqrzi6tlohoqrjvjfm", alt: "Photo Robin Vorstedt", class: "card_photo_home") %>
           </div>
         </div>
         <div class="col-md-6">
