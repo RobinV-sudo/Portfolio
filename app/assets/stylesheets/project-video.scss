@@ -1,0 +1,30 @@
+.project-video {
+  position: relative;
+  background-color: #8AAAE5;
+  height: 700px;
+  width: 900px;
+  display: flex;
+  font-weight: bold;
+  border-radius: 15px;
+  margin-left: -5px;
+  margin-top: 30px;
+  flex-direction: column;
+  font-family: 'Ubuntu', sans-serif;
+  border: 2px solid black;
+}
+
+.about_main_card_title {
+  color: black;
+  font-size: 50px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 25px;
+  height: 100px;
+  width: 600px;
+  border: 2px solid black;
+  margin-left: 170px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+}
