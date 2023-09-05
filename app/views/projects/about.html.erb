@@ -45,13 +45,18 @@
             }
           </script>
         </div>
-        <div class="col-md-6">
-          <div class="word-doc">
-            <a herf="/public/Robin Vorstedt CV.docx"></a>
-            <a herf="/public/Robin Vorstedt.pdf"></a>
+        <div class="col-md-2">
+          <div class="container-word-pdf">
+            <div class="word-doc-card">
+              <div class="word-doc-title">
+                <h2>C.V.</h2>
+                  <%= cl_image_tag("word-icon_bhdhoz", alt: "Word", class: "icon-word-pdf") %>
+                  <%= cl_image_tag("icon-pdf_icpcun", alt: "PDF", class: "icon-word-pdf") %>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-10">
           <div class="diploma-card">
             <h2 class="diploma-card-title">Diploma Le Wagon</h2>
               <%= cl_image_tag("otb34bqa28prxeisxqwe", alt: "Diploma", class: "diploma-photo") %>

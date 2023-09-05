@@ -1,43 +1,44 @@
-.diploma-card {
+.word-doc-card {
   position: relative;
   background-color: #8AAAE5;
   height: 67rem;
-  width: 92rem;
+  width: 15rem;
   display: flex;
   font-weight: bold;
   border-radius: 15px;
-  margin: 15px;
+  margin-left: 10px;
   margin-top: 30px;
   flex-direction: column;
   font-family: 'Ubuntu', sans-serif;
   border: 2px solid black;
 }
 
-.diploma-card-title {
+.word-doc-title {
   color: black;
-  font-size: 50px;
+  font-size: 35px;
   background-color: white;
   border-radius: 15px;
   margin-top: 25px;
-  height: 100px;
-  width: 600px;
+  height: 5rem;
+  width: 13rem;
   border: 2px solid black;
-  margin-left: 33rem;
+  margin-left: 14px;
   justify-content: center;
   align-items: center;
   font-family: 'Ubuntu', sans-serif;
   display: flex;
 }
 
-.diploma-photo {
-  height: 54rem;
-  width: 84rem;
-  border-radius: 15px;
-  border: 2px solid black;
-  margin-left: 50px;
-}
-
-.diploma-card-title:hover {
+.word-doc-title:hover {
   color: #8AAAE5;
   transition: all 0.5s;
+}
+
+.icon-word-pdf {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin-left: 10px;
+  display: grid;
 }
