@@ -1,13 +1,14 @@
 .project-video {
   position: relative;
   background-color: #8AAAE5;
-  height: 70rem;
+  height: 79rem;
   width: 109rem;
   display: flex;
   font-weight: bold;
   border-radius: 15px;
   margin-left: -5px;
   margin-top: 30px;
+  margin-bottom: 15px;
   flex-direction: column;
   font-family: 'Ubuntu', sans-serif;
   border: 2px solid black;
@@ -32,4 +33,36 @@
 .project_card_title:hover {
   color: #8AAAE5;
   transition: all 0.5s;
+}
+
+.project-description-title {
+  color: black;
+  font-size: 60px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 25px;
+  height: 100px;
+  width: 100rem;
+  border: 2px solid black;
+  margin-left: 75px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+}
+
+.project-description  {
+  color: black;
+  font-size: 22px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 25px;
+  height: 100px;
+  width: 100rem;
+  border: 2px solid black;
+  margin-left: 75px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
 }
