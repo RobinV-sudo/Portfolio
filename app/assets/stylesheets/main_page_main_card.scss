@@ -13,7 +13,7 @@
   border: 2px solid black;
 }
 
-.main_card h2 {
+.main_card_title {
   color: black;
   font-size: 50px;
   background-color: white;
@@ -26,9 +26,10 @@
   justify-content: center;
   align-items: center;
   font-family: 'Ubuntu', sans-serif;
+  display: flex;
 }
 
-.main_card:hover h2 {
+.main_card_title:hover {
   color: #8AAAE5;
   transition: all 0.5s;
 }
