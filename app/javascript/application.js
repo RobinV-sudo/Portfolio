@@ -4,3 +4,6 @@ import "controllers";
 
 // about
 import "slideshow.js";
+
+// contact
+import "contact";
