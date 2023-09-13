@@ -50,10 +50,9 @@
   margin-right: -20rem;
 }
 
-.form-control
-textarea {
-  height: 100px;
-  width: 30rem;
+.form-control {
+  height: 50px;
+  width: 25rem;
   background-color: white;
   color: black;
   letter-spacing: 1px;
@@ -61,7 +60,21 @@ textarea {
   font-family: 'Ubuntu', sans-serif;
   border: 2px solid black;
   margin-top: 15px;
-  }
+  justify-content: center;
+  display: flex;
+}
+
+.form-control-2 {
+  height: 300px;
+  width: 25rem;
+  background-color: white;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  border: 2px solid black;
+  margin-top: 15px;
+}
 
 
 .send-button {
@@ -69,7 +82,7 @@ textarea {
   height: 34px;
   width: 400px;
   overflow: hidden;
-  transition: all .2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .alt-send-button {
@@ -80,13 +93,8 @@ textarea {
 
 .send-text {
   display: block;
-  margin-top: 10px;
-  font: 700 12px 'Ubuntu', sans-serif;
-  letter-spacing: 2px;
-}
-
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
+  margin-top: 2px;
+  font: 700 17px 'Ubuntu', sans-serif;
 }
 
 /* Begin Right Contact Page */
@@ -192,7 +200,6 @@ textarea {
   opacity: 0;
   box-shadow: 0 0 0 1px #fff;
   transition: all .2s ease-in-out;
-  border: none;
 }
 
 .social-media-list li:hover {
