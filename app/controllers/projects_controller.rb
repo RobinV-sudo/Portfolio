@@ -15,4 +15,7 @@ class ProjectsController < ApplicationController
   def contact
   end
 
+  def new
+    @contact = Contact.new
+  end
 end

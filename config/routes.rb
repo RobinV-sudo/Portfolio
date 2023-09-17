@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   get "project", to: "projects#project"
   get "contact", to: "projects#contact"
 
+  get "contact/name", to: "contact#new"
+  get "contact/email", to: "contact#new"
+  get "contact/submit", to: "contact#new"
+
 end
