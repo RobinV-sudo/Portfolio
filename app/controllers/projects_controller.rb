@@ -18,4 +18,9 @@ class ProjectsController < ApplicationController
   def new
     @contact = Contact.new
   end
+
+  def mail
+    UserMailer.contact_email(params[:name], params[:email], params[:message]).deliver_now
+  end
+
 end
