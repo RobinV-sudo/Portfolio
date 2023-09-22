@@ -10,12 +10,12 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: "smtp.live.com",
-    port: 587,
-    domain: "robinvorstedt@outlook.com", # Replace with your domain
+    address: ENV['SMTP_ADDRESS'],
+    port: ENV['SMTP_PORT'],
+    domain: ENV['SMTP_DOMAIN'],
     authentication: :login,
-    user_name: "robinvorstedt@outlook.com", # Replace with your Outlook.com email address
-    password: "575575Rat",    # Replace with your Outlook.com password or app password
+    user_name: ENV['SMTP_USERNAME'],
+    password: ENV['SMTP_PASSWORD'],
     enable_starttls_auto: true
   }
 
