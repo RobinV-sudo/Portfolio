@@ -11,6 +11,10 @@
   </head>
 
   <body>
+    <%= stylesheet_link_tag "_background", media: "all", "data-turbo-track": "reload" %>
+      <%= stylesheet_link_tag "container", media: "all", "data-turbo-track": "reload" %>
+
     <%= yield %>
+
   </body>
 </html>

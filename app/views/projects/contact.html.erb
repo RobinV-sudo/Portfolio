@@ -1,60 +1,60 @@
-<body class="background">
-  <div class="navbar">
-      <%= link_to(cl_image_tag("axckr9oplcx3mgtoektt", alt: "logo rv", class: "logo_style"), "http://[::1]:3000/") %>
-    <a class="navbar-item" href="/contact">Contact</a>
-    <a class="navbar-item" href="/about">About</a>
-    <a class="navbar-item" href="/project">Project</a>
-    <a class="navbar-item" href="/">Home</a>
-  </div>
-  <div class="card-contact">
-    <section id="contact">
-      <h1 class="section-header">Contact</h1>
-      <div class="contact-wrapper">
-  <!-- Left contact page -->
- <!--  <form id="contact_email" class="form-horizontal" role="form">
-        <div class="form-group">
-          <div class="col-md-12">
-            <input type="text" class="form-control" id="name" placeholder="Name" name="name" value="" required>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-md-12">
-            <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" value="" required>
-          </div>
-        </div>
-        <textarea class="form-control-2" rows="10" placeholder="Message" name="message" required></textarea>
-        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-          <div class="alt-send-button">
-            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-          </div>
-        </button>
-      </form> -->
-  <!-- Right contact page -->
-        <div class="direct-contact-container">
-          <ul class="contact-list">
-            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Seoul, South-Korea</span></i></li>
-            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="https://api.whatsapp.com/send?phone=31640229542" title="Send Whatsapp message">Whatsapp</a></span></i></li>
-            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:robinvorstedt@outlook.com" title="Send me an email">robinvorstedt@outlook.com</a></span></i></li>
-          </ul>
-          <hr>
-          <ul class="social-media-list">
-            <li><a href="https://www.linkedin.com/in/robinvorstedt/" target="-blank" class="contact-icon">
-              <i class="fa fa-github" aria-hidden="true"></i>
-                <%= cl_image_tag("mwdymtombgh7u5lw7jxg", alt: "linkdeln", class: "link-to-linkdeln") %>
-              </a>
-            </li>
-            <li><a href="https://github.com/RobinV-sudo/" target="-blank" class="contact-icon">
-              <i class="fa fa-codepen" aria-hidden="true"></i>
-                <%= cl_image_tag("icon-github_ztzcuj", alt: "github", class: "link-to-github") %>
-              </a>
-            </li>
-          </ul>
-          <hr>
+<div class="navbar">
+    <%= link_to(cl_image_tag("axckr9oplcx3mgtoektt", alt: "logo rv", class: "logo_style"), "/") %>
+  <a class="navbar-item" href="/contact">Contact</a>
+  <a class="navbar-item" href="/about">About</a>
+  <a class="navbar-item" href="/project">Project</a>
+  <a class="navbar-item" href="/">Home</a>
+</div>
+<div class="card-contact">
+  <section id="contact">
+    <h1 class="section-header">Contact</h1>
+    <div class="contact-wrapper">
+<!-- Left contact page -->
+    <form id="contact_email" class="form-horizontal" role="form">
+      <div class="form-group">
+        <div class="col-md-12">
+          <input type="text" class="form-control" id="name" placeholder="Name" name="name" value="" required>
         </div>
       </div>
-    </section>
-  </div>
-</body>
+      <div class="form-group">
+        <div class="col-md-12">
+          <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" value="" required>
+        </div>
+      </div>
+      <textarea class="form-control-2" rows="10" placeholder="Message" name="message" required></textarea>
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+        <div class="alt-send-button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      </button>
+    </form>
+<!-- Right contact page -->
+      <div class="direct-contact-container">
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Seoul, South-Korea</span></i></li>
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="https://api.whatsapp.com/send?phone=31640229542" title="Send Whatsapp message">Whatsapp</a></span></i></li>
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:robinvorstedt@outlook.com" title="Send me an email">robinvorstedt@outlook.com</a></span></i></li>
+        </ul>
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="https://www.linkedin.com/in/robinvorstedt/" target="-blank" class="contact-icon">
+            <i class="fa fa-github" aria-hidden="true"></i>
+              <%= cl_image_tag("mwdymtombgh7u5lw7jxg", alt: "linkdeln", class: "link-to-linkdeln") %>
+            </a>
+          </li>
+          <li><a href="https://github.com/RobinV-sudo/" target="-blank" class="contact-icon">
+            <i class="fa fa-codepen" aria-hidden="true"></i>
+              <%= cl_image_tag("icon-github_ztzcuj", alt: "github", class: "link-to-github") %>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      </div>
+    </div>
+  </section>
+</div>
+
+
 
 
 <!-- <a href="https://www.linkedin.com/in/robinvorstedt/" target="_blank" class="contact-icon">

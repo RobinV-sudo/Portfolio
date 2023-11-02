@@ -1,72 +1,68 @@
- <body class="background">
-  <div class="container">
-    <div class="navbar">
-        <%= link_to(cl_image_tag("axckr9oplcx3mgtoektt", alt: "logo rv", class: "logo_style"), "http://[::1]:3000/") %>
-      <a class="navbar-item" href="/contact">Contact</a>
-      <a class="navbar-item" href="/about">About</a>
-      <a class="navbar-item" href="/project">Project</a>
-      <a class="navbar-item" href="/">Home</a>
+<div class="navbar">
+    <%= link_to(cl_image_tag("axckr9oplcx3mgtoektt", alt: "logo rv", class: "logo_style"), "/") %>
+  <a class="navbar-item" href="/contact">Contact</a>
+  <a class="navbar-item" href="/about">About</a>
+  <a class="navbar-item" href="/project">Project</a>
+  <a class="navbar-item" href="/">Home</a>
+</div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="about_main_card">
+        <h2 class="about_main_card_title">About Robin Vorstedt</h2>
+        <p class="about_main_card_text">I describe myself as a creative solver. Nothing stands in my way. I am always looking for new challenges to count myself to a higher level.
+                                        People describe me as resourceful, strong-willed, and adventurous.</p>
+      </div>
     </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="about_main_card">
-            <h2 class="about_main_card_title">About Robin Vorstedt</h2>
-            <p class="about_main_card_text">I describe myself as a creative solver. Nothing stands in my way. I am always looking for new challenges to count myself to a higher level.
-                                            People describe me as resourceful, strong-willed, and adventurous.</p>
-          </div>
+    <div class="col-md-6">
+      <div class="slidshow_container">
+        <div id="slideshow">
+          <%= cl_image_tag("viwf93n5dqyka1adjcbo", alt: "Photo 1", class: "active") %>
+          <%= cl_image_tag("irxxwabhvn1luq6iksa6", alt: "Photo 2") %>
+          <%= cl_image_tag("tvudmhrvp0wjkrbiashk", alt: "Photo 3") %>
         </div>
-        <div class="col-md-6">
-          <div class="slidshow_container">
-            <div id="slideshow">
-              <%= cl_image_tag("viwf93n5dqyka1adjcbo", alt: "Photo 1", class: "active") %>
-              <%= cl_image_tag("irxxwabhvn1luq6iksa6", alt: "Photo 2") %>
-              <%= cl_image_tag("tvudmhrvp0wjkrbiashk", alt: "Photo 3") %>
-            </div>
-            <div class="btn-container">
-              <button class="btn" onclick="showSlide(1)">Photo 1</button>
-              <button class="btn" onclick="showSlide(2)">Photo 2</button>
-              <button class="btn" onclick="showSlide(3)">Photo 3</button>
-            </div>
-          </div>
-          <script>
-            let currentSlide = 1;
-
-            function showSlide(slideNumber) {
-              const slides = document.querySelectorAll('#slideshow img');
-              const buttons = document.querySelectorAll('.btn');
-
-              slides[currentSlide - 1].classList.remove('active');
-              slides[slideNumber - 1].classList.add('active');
-
-              buttons[currentSlide - 1].classList.remove('active');
-              buttons[slideNumber - 1].classList.add('active');
-
-              currentSlide = slideNumber;
-            }
-          </script>
+        <div class="btn-container">
+          <button class="btn" onclick="showSlide(1)">Photo 1</button>
+          <button class="btn" onclick="showSlide(2)">Photo 2</button>
+          <button class="btn" onclick="showSlide(3)">Photo 3</button>
         </div>
-        <div class="col-md-2">
-          <div class="container-word-pdf">
-            <div class="word-doc-card">
-              <div class="word-doc-title">
-                <h2>C.V.</h2>
-              </div>
-              <a href="Robin Vorstedt CV.docx" download>
-                <%= cl_image_tag("word-icon-png_gaofx3", alt: "Word", class: "icon-word-pdf") %>
-              </a>
-              <a href="Robin Vorstedt CV.pdf" download>
-                <%= cl_image_tag("pdf-icon_f34dg3", alt: "PDF", class: "icon-word-pdf") %>
-              </a>
-            </div>
+      </div>
+      <script>
+        let currentSlide = 1;
+
+        function showSlide(slideNumber) {
+          const slides = document.querySelectorAll('#slideshow img');
+          const buttons = document.querySelectorAll('.btn');
+
+          slides[currentSlide - 1].classList.remove('active');
+          slides[slideNumber - 1].classList.add('active');
+
+          buttons[currentSlide - 1].classList.remove('active');
+          buttons[slideNumber - 1].classList.add('active');
+
+          currentSlide = slideNumber;
+        }
+      </script>
+    </div>
+    <div class="col-md-2">
+      <div class="container-word-pdf">
+        <div class="word-doc-card">
+          <div class="word-doc-title">
+            <h2>C.V.</h2>
           </div>
-        </div>
-        <div class="col-md-10">
-          <div class="diploma-card">
-            <h2 class="diploma-card-title">Diploma Le Wagon</h2>
-              <%= cl_image_tag("otb34bqa28prxeisxqwe", alt: "Diploma", class: "diploma-photo") %>
-          </div>
+          <a href="Robin Vorstedt CV.docx" download>
+            <%= cl_image_tag("word-icon-png_gaofx3", alt: "Word", class: "icon-word-pdf") %>
+          </a>
+          <a href="Robin Vorstedt CV.pdf" download>
+            <%= cl_image_tag("pdf-icon_f34dg3", alt: "PDF", class: "icon-word-pdf") %>
+          </a>
         </div>
       </div>
     </div>
+    <div class="col-md-10">
+      <div class="diploma-card">
+        <h2 class="diploma-card-title">Diploma Le Wagon</h2>
+          <%= cl_image_tag("otb34bqa28prxeisxqwe", alt: "Diploma", class: "diploma-photo") %>
+      </div>
+    </div>
   </div>
-</body>
+</div>
