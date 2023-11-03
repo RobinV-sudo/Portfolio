@@ -20,25 +20,37 @@
     <div class="col-md-12">
       <div class="first-project">
         <h2 class="project_card_title-first">First Project</h2>
-          <div class="slidshow_container">
-            <div id="slideshow">
+          <div class="slidshow_container_project">
+            <div id="slideshow-project">
               <%= cl_image_tag("", alt: "Photo 4", class: "active") %>
               <%= cl_image_tag("", alt: "Photo 5") %>
               <%= cl_image_tag("", alt: "Photo 6") %>
             </div>
             <div class="btn-container">
-              <button class="btn" onclick="showSlide(1)">Photo 4</button>
-              <button class="btn" onclick="showSlide(2)">Photo 5</button>
-              <button class="btn" onclick="showSlide(3)">Photo 6</button>
+              <button class="btn" onclick="showSlide(4)">Photo 4</button>
+              <button class="btn" onclick="showSlide(5)">Photo 5</button>
+              <button class="btn" onclick="showSlide(6)">Photo 6</button>
             </div>
           </div>
+          <script>
+            let currentSlide = 1;
+
+            function showSlide(slideNumber) {
+              const slides = document.querySelectorAll('#slideshow img');
+              const buttons = document.querySelectorAll('.btn');
+
+              slides[currentSlide - 1].classList.remove('active');
+              slides[slideNumber - 1].classList.add('active');
+
+              buttons[currentSlide - 1].classList.remove('active');
+              buttons[slideNumber - 1].classList.add('active');
+
+              currentSlide = slideNumber;
+            }
+          </script>
         <div class="project-description-first">
           <h2>The first project was the task: Make a website that is simailer to Airbnb and use your fantasy. Me and my team came with the idea to rent spaceships.</h2>
         </div>
       </div>
     </div>
   </div>
-
-
-          <!--<h1>photo projects?</h1>
-          <h1>Link to the projects?</h1>-->
