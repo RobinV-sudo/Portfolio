@@ -15,14 +15,14 @@
     border: 2px solid black;
 }
 
-#slideshow-project {
+.slideshow-project {
   max-width: 600px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
 
-#slideshow-project img {
+.slideshow-project img {
   width: 37rem;
   height: 35rem;
   border-radius: 15px;
@@ -30,6 +30,6 @@
   display: none;
 }
 
-#slideshow-project img.active {
+.slideshow-project img.active {
   display: block;
 }

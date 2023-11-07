@@ -1,35 +1,36 @@
 // nave bar and background
-@import "navbar";
-@import "navbar-item";
-@import "background";
-@import "logo_style";
+@import "components/navbar";
+@import "components/navbar-item";
+@import "_background";
+@import "components/logo_style";
 @import "container";
-@import "row";
+@import "components/row";
 
 // Home Page
-@import "main_page_main_card";
-@import "info_card";
-@import "card_photo_home";
-@import "photo_card_home_2";
-@import "experince";
-@import "course";
-@import "buttom_row";
-@import "contact_me";
-@import "icon_container";
-@import "contrainer_icon";
+@import "home page/main_page_main_card";
+@import "home page/info_card";
+@import "home page/card_photo_home";
+@import "home page/photo_card_home_2";
+@import "home page/experince";
+@import "home page/course";
+@import "home page/buttom_row";
+@import "home page/contact_me";
+@import "home page/icon_container";
+@import "home page/contrainer_icon";
 
 // about page
-@import "about_main_card";
-@import "slidshow_container";
-@import "diploma-card";
-@import "word-doc-card";
-@import "container-word-pdf";
-@import "slideshow";
+@import "about page/about_main_card";
+@import "about page/slidshow_container";
+@import "about page/diploma-card";
+@import "about page/word-doc-card";
+@import "about page/container-word-pdf";
+@import "about page/slideshow";
 
 // contact
-@import "contact";
+@import "contact page/contact";
 
 // project
-@import "project-video";
-@import "video-youtube";
-@import "first-project";
+@import "project page/project-video";
+@import "project page/video-youtube";
+@import "project page/first-project";
+@import "project page/slidshow_container_project";
