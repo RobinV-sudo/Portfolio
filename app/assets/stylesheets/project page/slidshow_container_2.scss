@@ -1,0 +1,35 @@
+.slideshow-container_2 {
+  position: relative;
+  background-color: #8AAAE5;
+  height: 56rem;
+  width: 106rem;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-right: 20px;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+#slideshow-project {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide_2 img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 15px;
+  border: 2px solid black;
+  display: none;
+}
+
+.slide_2.active img {
+  display: block;
+}

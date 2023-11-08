@@ -16,20 +16,18 @@
             <h2>This project I did it with 3 other classmates. this presenter was presented by 2 of my classmates.</h2>
           </div>
       </div>
-    </div>
-    <div class="col-md-12">
       <div class="first-project">
         <h2 class="project_card_title-first">First Project</h2>
-          <div class="slidshow_container_project">
-            <div id="slideshow">
-              <%= cl_image_tag("Spacetrip_-_1_ert0oz", alt: "Photo 4", class: "active") %>
-              <%= cl_image_tag("Spacetrip_-_2_xklcit", alt: "Photo 5") %>
-              <%= cl_image_tag("Spacetrip_-_3_ls118i", alt: "Photo 6") %>
-              <%= cl_image_tag("Spacetrip_-_4_xoyob0", alt: "Photo 7") %>
-              <%= cl_image_tag("Spacetrip_-_5_ft0cqo", alt: "Photo 8") %>
+          <div class="slideshow-container_2">
+            <div id="slideshow-project_2">
+              <%= cl_image_tag("Spacetrip_-_1_ert0oz", alt: "Photo 4", class: "slide_2.active") %>
+              <%= cl_image_tag("Spacetrip_-_2_xklcit", alt: "Photo 5", class: "slide_2") %>
+              <%= cl_image_tag("Spacetrip_-_3_ls118i", alt: "Photo 6", class: "slide_2") %>
+              <%= cl_image_tag("Spacetrip_-_4_xoyob0", alt: "Photo 7", class: "slide_2") %>
+              <%= cl_image_tag("Spacetrip_-_5_ft0cqo", alt: "Photo 8", class: "slide_2") %>
             </div>
             <div class="btn-container">
-              <button class="btn" onclick="showSlide(1)">Photo 4</button>
+              <button class="btn active" onclick="showSlide(1)">Photo 4</button>
               <button class="btn" onclick="showSlide(2)">Photo 5</button>
               <button class="btn" onclick="showSlide(3)">Photo 6</button>
               <button class="btn" onclick="showSlide(4)">Photo 7</button>
@@ -39,21 +37,21 @@
           <script>
             let currentSlide = 1;
 
-            function showSlide(slideNumber) {
-              const slides = document.querySelectorAll('#slideshow img');
-              const buttons = document.querySelectorAll('.btn');
+              function showSlide(slideNumber) {
+                const slides = document.querySelectorAll('#slideshow-project_2 img');
+                const buttons = document.querySelectorAll('.btn');
 
-              slides[currentSlide - 1].classList.remove('active');
-              slides[slideNumber - 1].classList.add('active');
+                slides[currentSlide - 1].classList.remove('active');
+                slides[slideNumber - 1].classList.add('active');
 
-              buttons[currentSlide - 1].classList.remove('active');
-              buttons[slideNumber - 1].classList.add('active');
+                buttons[currentSlide - 1].classList.remove('active');
+                buttons[slideNumber - 1].classList.add('active');
 
-              currentSlide = slideNumber;
-            }
+                currentSlide = slideNumber;
+              }
           </script>
         <div class="project-description-first">
-          <h2>The first project was the task: Make a website that is simailer to Airbnb and use your fantasy. Me and my team came with the idea to rent spaceships.</h2>
+          <h2>The first project was the task: Make a website that is simailer to Airbnb and use your fantasy. Me and my team came with the idea to rent spaceships. In Airbnb style.</h2>
         </div>
       </div>
     </div>
