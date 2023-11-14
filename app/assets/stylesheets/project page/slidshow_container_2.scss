@@ -22,7 +22,7 @@
   overflow: hidden;
 }
 
-.slide_2 img {
+#slide_2 img {
   width: 25rem;
   height: 25rem;
   border-radius: 15px;
@@ -30,6 +30,6 @@
   display: none;
 }
 
-.slide_2.active img {
+#slide_2.active img {
   display: block;
 }
