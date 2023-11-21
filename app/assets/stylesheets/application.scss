@@ -1,3 +1,5 @@
+config.assets.enabled = true
+
 // nave bar and background
 @import "components/navbar";
 @import "components/navbar-item";
@@ -34,3 +36,4 @@
 @import "project page/video-youtube";
 @import "project page/first-project";
 @import "project page/slidshow_container_2";
+@import "project page/btn-project-container.scss"

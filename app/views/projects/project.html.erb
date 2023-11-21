@@ -16,48 +16,50 @@
             <h2>This project I did it with 3 other classmates. this presenter was presented by 2 of my classmates.</h2>
           </div>
       </div>
+    </div>
+    <div class="col-md-12">
       <div class="first-project">
         <h2 class="project_card_title-first">First Project</h2>
-          <div class="slideshow-container_2">
-            <div id="slideshow-project_2">
-              <%= image_tag("spacetrip_1.jpg", alt: "Photo 4", class: "slide_2 active") %>
-              <%= image_tag("spacetrip_2.jpg", alt:"Photo 5", class:"slide_2") %>
-              <%= image_tag("spacetrip_3.jpg", alt:"Photo 6", class:"slide_2") %>
-              <%= image_tag("spacetrip_4.jpg", alt:"Photo 7", class:"slide_2") %>
-              <%= image_tag("spacetrip_5.jpg", alt:"Photo 8", class:"slide_2") %>
-              <!-- <%= cl_image_tag("Spacetrip_-_1_ert0oz", alt: "Photo 4", class: "slide_2.active") %>
-              <%= cl_image_tag("Spacetrip_-_2_xklcit", alt: "Photo 5", class: "slide_2") %>
-              <%= cl_image_tag("Spacetrip_-_3_ls118i", alt: "Photo 6", class: "slide_2") %>
-              <%= cl_image_tag("Spacetrip_-_4_xoyob0", alt: "Photo 7", class: "slide_2") %>
-              <%= cl_image_tag("Spacetrip_-_5_ft0cqo", alt: "Photo 8", class: "slide_2") %> -->
-            </div>
-            <div class="btn-container">
-              <button class="btn active" onclick="showSlide(4)">Photo 1</button>
-              <button class="btn" onclick="showSlide(5)">Photo 2</button>
-              <button class="btn" onclick="showSlide(6)">Photo 3</button>
-              <button class="btn" onclick="showSlide(7)">Photo 4</button>
-              <button class="btn" onclick="showSlide(8)">Photo 5</button>
-            </div>
+          <div id="slideshow_project_2">
+            <%= image_tag("spacetrip_1.jpg", alt:"Photo 4", class:"slide_2.active") %>
+            <%= image_tag("spacetrip_2.jpg", alt:"Photo 5") %>
+            <%= image_tag("spacetrip_3.jpg", alt:"Photo 6") %>
+            <%= image_tag("spacetrip_4.jpg", alt:"Photo 7") %>
+            <%= image_tag("spacetrip_5.jpg", alt:"Photo 8") %>
+            <!-- <%= cl_image_tag("Spacetrip_-_1_ert0oz", alt: "Photo 4", class: "slide_2.active") %>
+            <%= cl_image_tag("Spacetrip_-_2_xklcit", alt: "Photo 5", class: "slide_2") %>
+            <%= cl_image_tag("Spacetrip_-_3_ls118i", alt: "Photo 6", class: "slide_2") %>
+            <%= cl_image_tag("Spacetrip_-_4_xoyob0", alt: "Photo 7", class: "slide_2") %>
+            <%= cl_image_tag("Spacetrip_-_5_ft0cqo", alt: "Photo 8", class: "slide_2") %> -->
           </div>
-          <script>
-            let currentSlide = 1;
+          <div class="btn-project-container">
+            <button class="btn-project active" onclick="showSlide1(1)">Photo 1</button>
+            <button class="btn-project" onclick="showSlide1(2)">Photo 2</button>
+            <button class="btn-project" onclick="showSlide1(3)">Photo 3</button>
+            <button class="btn-project" onclick="showSlide1(4)">Photo 4</button>
+            <button class="btn-project" onclick="showSlide1(5)">Photo 5</button>
+          </div>
+        </div>
+        <script>
+          let currentSlide = 1;
 
-              function showSlide(slideNumber) {
-                const slides = document.querySelectorAll('#slideshow-project_2 img');
-                const buttons = document.querySelectorAll('.btn');
+          function showSlide1(slideNumber) {
+            const slides = document.querySelectorAll('#slideshow_project_2 .slide_2');
+            const buttons = document.querySelectorAll('.btn-project');
 
-                slides[currentSlide - 1].classList.remove('active');
-                slides[slideNumber - 1].classList.add('active');
+            slides[currentSlide - 1].classList.remove('active');
+            slides[slideNumber - 1].classList.add('active');
 
-                buttons[currentSlide - 1].classList.remove('active');
-                buttons[slideNumber - 1].classList.add('active');
+            buttons[currentSlide - 1].classList.remove('active');
+            buttons[slideNumber - 1].classList.add('active');
 
-                currentSlide = slideNumber;
-              }
-          </script>
+            currentSlide = slideNumber;
+          }
+        </script>
         <div class="project-description-first">
           <h2>The first project was the task: Make a website that is simailer to Airbnb and use your fantasy. Me and my team came with the idea to rent spaceships. In Airbnb style.</h2>
         </div>
       </div>
     </div>
   </div>
+</div>

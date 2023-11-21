@@ -66,3 +66,47 @@
   font-family: 'Ubuntu', sans-serif;
   display: flex;
 }
+
+.slideshow-container_2 {
+  position: relative;
+  background-color: #8AAAE5;
+  height: 50rem;
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-right: 20px;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+body .first-project .slideshow-project_2 img {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  border: none;
+  display: block;
+}
+
+#slideshow-project_2 {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#slideshow-project_2 img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 15px;
+  border: 2px solid black;
+  display: none;
+}
+
+#slide_2.active img {
+  display: block;
+}

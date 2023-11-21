@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .slideshow-container_2 {
   position: relative;
   background-color: #8AAAE5;
@@ -15,14 +20,14 @@
   border: 2px solid black;
 }
 
-#slideshow-project {
+#slideshow-project_2 {
   max-width: 600px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
 
-#slide_2 img {
+.slide_2 img {
   width: 25rem;
   height: 25rem;
   border-radius: 15px;
@@ -30,6 +35,6 @@
   display: none;
 }
 
-#slide_2.active img {
+.slide_2.active img {
   display: block;
 }
