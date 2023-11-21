@@ -20,17 +20,40 @@
     <div class="col-md-12">
       <div class="first-project">
         <h2 class="project_card_title-first">First Project</h2>
-          <div id="slideshow_project_2">
+      <div class="slider_project">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <span id="slide-4"></span>
+        <span id="slide-5"></span>
+        <div class="image-container">
+          <%= cl_image_tag("Spacetrip_-_1_ert0oz", class: "slide_project", width: "500", height: "300") %>
+          <%= cl_image_tag("Spacetrip_-_2_xklcit", class: "slide_project", width: "500", height: "300") %>
+          <%= cl_image_tag("Spacetrip_-_3_ls118i", class: "slide_project", width: "500", height: "300") %>
+          <%= cl_image_tag("Spacetrip_-_4_xoyob0", class: "slide_project", width: "500", height: "300") %>
+          <%= cl_image_tag("Spacetrip_-_5_ft0cqo", class: "slide_project", width: "500", height: "300") %>
+        </div>
+        <div class="buttons_project">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+          <a href="#slide-4"></a>
+          <a href="#slide-5"></a>
+        </div>
+      </div>
+          <!--<div id="slideshow_project_2">
+            this is saved in Ruby on Rails
             <%= image_tag("spacetrip_1.jpg", alt:"Photo 4", class:"slide_2.active") %>
             <%= image_tag("spacetrip_2.jpg", alt:"Photo 5") %>
             <%= image_tag("spacetrip_3.jpg", alt:"Photo 6") %>
             <%= image_tag("spacetrip_4.jpg", alt:"Photo 7") %>
             <%= image_tag("spacetrip_5.jpg", alt:"Photo 8") %>
-            <!-- <%= cl_image_tag("Spacetrip_-_1_ert0oz", alt: "Photo 4", class: "slide_2.active") %>
+            This is saved in cloud
+            <%= cl_image_tag("Spacetrip_-_1_ert0oz", alt: "Photo 4", class: "slide_2.active") %>
             <%= cl_image_tag("Spacetrip_-_2_xklcit", alt: "Photo 5", class: "slide_2") %>
             <%= cl_image_tag("Spacetrip_-_3_ls118i", alt: "Photo 6", class: "slide_2") %>
             <%= cl_image_tag("Spacetrip_-_4_xoyob0", alt: "Photo 7", class: "slide_2") %>
-            <%= cl_image_tag("Spacetrip_-_5_ft0cqo", alt: "Photo 8", class: "slide_2") %> -->
+            <%= cl_image_tag("Spacetrip_-_5_ft0cqo", alt: "Photo 8", class: "slide_2") %>
           </div>
           <div class="btn-project-container">
             <button class="btn-project active" onclick="showSlide1(1)">Photo 1</button>
@@ -55,7 +78,7 @@
 
             currentSlide = slideNumber;
           }
-        </script>
+        </script> -->
         <div class="project-description-first">
           <h2>The first project was the task: Make a website that is simailer to Airbnb and use your fantasy. Me and my team came with the idea to rent spaceships. In Airbnb style.</h2>
         </div>
